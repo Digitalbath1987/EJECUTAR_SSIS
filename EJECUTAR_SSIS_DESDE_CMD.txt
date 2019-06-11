@@ -1,0 +1,10 @@
+Ejecución simple
+dtexec.exe /f C:\PRUEBA\SSISTest\Package.dtsx
+
+Ejecución modificando el valor de 1 variable
+dtexec.exe /f C:\PRUEBA\SSISTest\Package.dtsx /SET «\Package.Variables[User::MES].Properties[Value];ENERO»
+
+Ejecución modificando el valor de 2 variables
+dtexec.exe /f C:\PRUEBA\SSISTest\Package.dtsx /SET «\Package.Variables[User::MES].Properties[Value];ENERO» /SET «\Package.Variables[User::USUARIO].Properties[Value];JUANA»
+
+ 
